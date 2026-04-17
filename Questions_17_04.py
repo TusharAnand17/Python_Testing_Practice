@@ -45,7 +45,8 @@ print([x.upper() for x in words if isPalindrome(x)])
 
 input_string = "Programming" 
 result = dict()
+input_string = input_string.strip().lower()
 for ch in input_string:
     result[ch] = result.get(ch,0) + 1
-    
+
 print({k:v for k,v in result.items() if v > 1})
