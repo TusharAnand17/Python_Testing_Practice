@@ -5,7 +5,7 @@
 words = ["level", "python", "madam", "code", "radar"]
 def isPalindrome(word):
     if len(word) == 0:
-        return True
+        return False
     i, j = 0, len(word) - 1
     while i < j:
         if word[i] == word[j]:
